@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<style>
+    .state-borders {
+        fill: none;
+        stroke: black;
+        stroke-width: 1px;
+        stroke-linejoin: round;
+        stroke-linecap: round;
+        pointer-events: none;
+    }
+</style>
+
+<head>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header"></div>
+    <div>
+        <h1 style="text-align: center;">CPSC 583 - Data Visualization Base</h1>
+    </div>
+    <div>
+        <svg width="960" height="600" style="display: block; margin: auto;"></svg>
+    </div>
+
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/topojson.v2.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script>
+
+        //Array for Individuals Affected (SUM)
+        var personsAffectedArray = {
+        }
+
+        console.log(personsAffectedArray)
+
+        var svg = d3.select("svg");
+        var path = d3.geoPath();
+        d3.json("states.json", function (error, us) {
+            if (error) throw error;
+
+            console.log(us)
+
+            //PA 42
+            //TRANSFER ID TO CODE
+            //Load my data first
+            d3.json("myData-All.json", function (data) {
+                //Calculate the total Affected per State
+                data.forEach(function (d) {
+                    if (d.State in personsAffectedArray) {
+                        personsAffectedArray[d.State] += +d.Individuals_Affected;
+                    } else {
+                        personsAffectedArray[d.State] = +d.Individuals_Affected;
+                    }
+                })
+
+                //Colors for amount of people affected (high -> low)
+                //use sqrt of total
+                var IAcolor = d3.scaleLinear()
+                    .domain([4, 8])
+                    .range(['white', 'blue'])
+                console.log(IAcolor)
+
+                //Change the color based on IA array
+                svg.selectAll("path")
+                    .data(topojson.feature(us, us.objects.states).features)
+                    .enter()
+                    .append("path")
+                    .attr("d", path)
+                    .attr("fill", function (d) {
+                        var val = Math.log(Math.sqrt(personsAffectedArray[d.id]))
+                        return IAcolor(val)
+                    });
+
+                svg.selectAll("text")
+                    .data(topojson.feature(us, us.objects.states).features)
+                    .enter()
+                    .append("text")
+                    .attr("x", function (d) {
+                        return path.centroid(d)[0];
+                    })
+                    .attr("y", function (d) {
+                        return path.centroid(d)[1];
+                    })
+                    .attr("font-size", "15px")
+                    .attr("font-family", "Courier New")
+                    .attr("font-weight", "bold")
+                    .text(function (d) {
+                        return d.id
+                    })
+
+                svg.selectAll("text")
+
+            })
+            console.log(personsAffectedArray)
+        });
+
+    </script>
+
+    <!-- Load the Navbar -->
+    <script>
+        $("#header").load("navbar.html");
+    </script>
+</body>

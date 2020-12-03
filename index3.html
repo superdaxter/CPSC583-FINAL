@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<style>
+    .state-borders {
+        fill: none;
+        stroke: black;
+        stroke-width: 1px;
+        stroke-linejoin: round;
+        stroke-linecap: round;
+        pointer-events: none;
+    }
+</style>
+
+<head>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header"></div>
+    <div class="text-center">
+        <h1>CPSC 583 - Data Visualization 3</h1>
+        <p>
+            Map using color to signify Individuals Affected, with numbers reflecting those values
+        </p>
+    </div>
+    <div class="row">
+        <div class="col-2 text-right">
+            <p>Legend:</p>
+            <div id="legend2"></div>
+        </div>
+        <div class="col-10" >
+            <svg width="960" height="600" style="display: block; margin: auto;"></svg>
+        </div>
+    </div>
+
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/topojson.v2.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script>
+
+        //Array for Individuals Affected (SUM)
+        var personsAffectedArray = {
+        }
+
+        //Summation data for Type of Breach etc.
+        let BreachTypeSumData = [
+            { breach: "Hack", freq: 0, color: "yellow" },
+            { breach: "UA", freq: 0, color: "green" },
+            { breach: "Theft", freq: 0, color: "black" },
+            { breach: "Other", freq: 0, color: "red" },
+            { breach: "ImD", freq: 0, color: "purple" },
+            { breach: "Loss", freq: 0, color: "silver" },
+            { breach: "Unknown", freq: 0, color: "pink" }
+        ]
+
+        //Summation data for Type of Breach etc.
+        let maxBreachData = [
+
+        ]
+        console.log(personsAffectedArray)
+
+        var svg = d3.select("svg");
+        var path = d3.geoPath();
+        d3.json("states.json", function (error, us) {
+            if (error) throw error;
+
+            console.log(us)
+
+            //PA 42
+            //TRANSFER ID TO CODE
+            //Load my data first
+
+            //Calculate the total Affected per State
+            //Add the data to total Data
+            d3.json("myData-All.json", function (data) {
+                data.forEach(function (d) {
+                    if (d.State in personsAffectedArray) {
+                        personsAffectedArray[d.State] += +d.Individuals_Affected;
+                    } else {
+                        personsAffectedArray[d.State] = +d.Individuals_Affected;
+                    }
+                    if (d.State in maxBreachData) {
+                        maxBreachData[d.State] += +d.Individuals_Affected;
+                    } else {
+                        maxBreachData[d.State] = +d.Individuals_Affected;
+                    }
+                    //total data
+                    if (d.Type_of_Breach.includes("Hack")) {
+                        BreachTypeSumData[0].freq++
+                    }
+                    if (d.Type_of_Breach.includes("Unauthorized")) {
+                        BreachTypeSumData[1].freq++
+                    }
+                    if (d.Type_of_Breach.includes("Theft")) {
+                        BreachTypeSumData[2].freq++
+                    }
+                    if (d.Type_of_Breach.includes("Other")) {
+                        BreachTypeSumData[3].freq++
+                    }
+                    if (d.Type_of_Breach.includes("Improper Disposal")) {
+                        BreachTypeSumData[4].freq++
+                    }
+                    if (d.Type_of_Breach.includes("Loss")) {
+                        BreachTypeSumData[5].freq++
+                    }
+                    if (d.Type_of_Breach.includes("Unknown")) {
+                        BreachTypeSumData[6].freq++
+                    }
+                })
+
+                console.log();
+
+                //Retrieve Chart Data
+                var min = 100000000;
+                var max = 0;
+                for (i = 0; i < BreachTypeSumData.length; i++) {
+                    if (BreachTypeSumData[i].freq < min) {
+                        min = BreachTypeSumData[i].freq;
+                    }
+                    if (BreachTypeSumData[i].freq > max) {
+                        max = BreachTypeSumData[i].freq;
+                    }
+                }
+
+                //Colors for amount of people affected (high -> low)
+                //use sqrt of total
+                var IAcolor = d3.scaleLinear()
+                    .domain([2, 1000])
+                    .range(['#e6faf6', '#005241'])
+                console.log(IAcolor)
+
+                //Change the color based on IA array
+                svg.selectAll("path")
+                    .data(topojson.feature(us, us.objects.states).features)
+                    .enter()
+                    .append("path")
+                    .attr("d", path)
+                    .attr("fill", function (d) {
+                        var val = Math.sqrt(personsAffectedArray[d.id])
+                        return IAcolor(val)
+                    });
+
+                var texts = svg.selectAll("text")
+                    .data(topojson.feature(us, us.objects.states).features)
+                    .enter()
+
+                texts.append("text")
+                    .attr("x", function (d) {
+                        return path.centroid(d)[0];
+                    })
+                    .attr("y", function (d) {
+                        return path.centroid(d)[1];
+                    })
+                    .attr("font-size", "15px")
+                    .attr("font-family", "Courier New")
+                    .attr("font-weight", "normal")
+                    .text(function (d) {
+                        return d.id
+                    });
+
+                texts.append("text")
+                    .attr("x", function (d) {
+                        return path.centroid(d)[0] - 20;
+                    })
+                    .attr("y", function (d) {
+                        return path.centroid(d)[1] + 12;
+                    })
+                    .attr("font-size", "15px")
+                    .attr("fill", "white")
+                    .attr("font-family", "Courier New")
+                    .attr("font-weight", "900")
+                    .text(function (d) {
+                        return personsAffectedArray[d.id]
+                    });
+
+            })
+            console.log(personsAffectedArray)
+        });
+
+    </script>
+
+    <!-- Load the Navbar -->
+    <script>
+        $("#header").load("navbar.html");
+    </script>
+</body>
