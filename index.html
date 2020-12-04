@@ -353,6 +353,8 @@
                             return Math.exp(Math.log(d.freq))
                         })])
 
+                        var totalAffected = 0;
+
                         svgChart.selectAll("rect")
                             .data(BreachTypeSumData)
                             .enter()
@@ -363,6 +365,7 @@
                             })
                             .attr("width", x.bandwidth())
                             .attr("y", function (d) {
+                                totalAffected  += d.freq;
                                 return y(d.freq)
                             })
                             .attr("height", function (d) {
@@ -405,7 +408,7 @@
                             .call(yAxis);
 
                         d3.select('#totalInfo')
-                            .text("Maximum: " + biggestforstate)
+                            .text("Total Affected: " + totalAffected)
 
                         //My Tooltip
                         var div = d3.select("body").append("div")
