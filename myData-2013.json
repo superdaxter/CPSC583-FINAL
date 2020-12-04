@@ -1,0 +1,1773 @@
+﻿[
+    {
+        "State": "NC",
+        "Individuals_Affected": "1000",
+        "Type_of_Breach": "Theft",
+        "Location_of_Breached_Information": "Desktop Computer",
+        "Year": "2013"
+    },
+    {
+        "State": "FL",
+        "Individuals_Affected": "1200",
+        "Type_of_Breach": "Theft",
+        "Location_of_Breached_Information": "Laptop",
+        "Year": "2013"
+    },
+    {
+        "State": "MD",
+        "Individuals_Affected": "5822",
+        "Type_of_Breach": "Theft",
+        "Location_of_Breached_Information": "Laptop",
+        "Year": "2013"
+    },
+    {
+        "State": "CA",
+        "Individuals_Affected": "1368",
+        "Type_of_Breach": "Theft, Other",
+        "Location_of_Breached_Information": "Paper",
+        "Year": "2013"
+    },
+    {
+        "State": "GA",
+        "Individuals_Affected": "1819",
+        "Type_of_Breach": "Theft",
+        "Location_of_Breached_Information": "Laptop",
+        "Year": "2013"
+    },
+    {
+        "State": "CA",
+        "Individuals_Affected": "686",
+        "Type_of_Breach": "Theft",
+        "Location_of_Breached_Information": "Paper",
+        "Year": "2013"
+    },
+    {
+        "State": "GA",
+        "Individuals_Affected": "3000",
+        "Type_of_Breach": "Theft",
+        "Location_of_Breached_Information": "Laptop",
+        "Year": "2013"
+    },
+    {
+        "State": "PA",
+        "Individuals_Affected": "527",
+        "Type_of_Breach": "Theft",
+        "Location_of_Breached_Information": "Paper",
+        "Year": "2013"
+    },
+    {
+        "State": "ME",
+        "Individuals_Affected": "1920",
+        "Type_of_Breach": "Other",
+        "Location_of_Breached_Information": "E-mail",
+        "Year": "2013"
+    },
+    {
+        "State": "UT",
+        "Individuals_Affected": "6332",
+        "Type_of_Breach": "Loss",
+        "Location_of_Breached_Information": "Other Portable Electronic Device",
+        "Year": "2013"
+    },
+    {
+        "State": "OH",
+        "Individuals_Affected": "1200",
+        "Type_of_Breach": "Theft",
+        "Location_of_Breached_Information": "Desktop Computer",
+        "Year": "2013"
+    },
+    {
+        "State": "FL",
+        "Individuals_Affected": "12299",
+        "Type_of_Breach": "Theft",
+        "Location_of_Breached_Information": "Laptop",
+        "Year": "2013"
+    },
+    {
+        "State": "FL",
+        "Individuals_Affected": "1318",
+        "Type_of_Breach": "Theft",
+        "Location_of_Breached_Information": "Laptop",
+        "Year": "2013"
+    },
+    {
+        "State": "MD",
+        "Individuals_Affected": "6400",
+        "Type_of_Breach": "Hacking/IT Incident",
+        "Location_of_Breached_Information": "Network Server",
+        "Year": "2013"
+    },
+    {
+        "State": "OR",
+        "Individuals_Affected": "3269",
+        "Type_of_Breach": "Theft",
+        "Location_of_Breached_Information": "Desktop Computer, Electronic Medical Record",
+        "Year": "2013"
+    },
+    {
+        "State": "MA",
+        "Individuals_Affected": "8727",
+        "Type_of_Breach": "Hacking/IT Incident",
+        "Location_of_Breached_Information": "Network Server",
+        "Year": "2013"
+    },
+    {
+        "State": "UT",
+        "Individuals_Affected": "2600",
+        "Type_of_Breach": "Theft, Loss, Other",
+        "Location_of_Breached_Information": "Paper",
+        "Year": "2013"
+    },
+    {
+        "State": "TX",
+        "Individuals_Affected": "697",
+        "Type_of_Breach": "Unauthorized Access/Disclosure",
+        "Location_of_Breached_Information": "Paper",
+        "Year": "2013"
+    },
+    {
+        "State": "RI",
+        "Individuals_Affected": "2082",
+        "Type_of_Breach": "Unknown, Other",
+        "Location_of_Breached_Information": "Paper",
+        "Year": "2013"
+    },
+    {
+        "State": "WA",
+        "Individuals_Affected": "629",
+        "Type_of_Breach": "Theft",
+        "Location_of_Breached_Information": "Laptop",
+        "Year": "2013"
+    },
+    {
+        "State": "CA",
+        "Individuals_Affected": "2400",
+        "Type_of_Breach": "Unauthorized Access/Disclosure",
+        "Location_of_Breached_Information": "Paper",
+        "Year": "2013"
+    },
+    {
+        "State": "IL",
+        "Individuals_Affected": "12542",
+        "Type_of_Breach": "Theft",
+        "Location_of_Breached_Information": "Electronic Medical Record",
+        "Year": "2013"
+    },
+    {
+        "State": "NC",
+        "Individuals_Affected": "5370",
+        "Type_of_Breach": "Theft, Unauthorized Access/Disclosure",
+        "Location_of_Breached_Information": "Laptop, Paper",
+        "Year": "2013"
+    },
+    {
+        "State": "TX",
+        "Individuals_Affected": "554",
+        "Type_of_Breach": "Theft",
+        "Location_of_Breached_Information": "Paper",
+        "Year": "2013"
+    },
+    {
+        "State": "SC",
+        "Individuals_Affected": "7405",
+        "Type_of_Breach": "Loss",
+        "Location_of_Breached_Information": "Laptop",
+        "Year": "2013"
+    },
+    {
+        "State": "MO",
+        "Individuals_Affected": "589",
+        "Type_of_Breach": "Theft",
+        "Location_of_Breached_Information": "Paper",
+        "Year": "2013"
+    },
+    {
+        "State": "OR",
+        "Individuals_Affected": "1076",
+        "Type_of_Breach": "Theft",
+        "Location_of_Breached_Information": "Laptop",
+        "Year": "2013"
+    },
+    {
+        "State": "IN",
+        "Individuals_Affected": "3131",
+        "Type_of_Breach": "Unauthorized Access/Disclosure",
+        "Location_of_Breached_Information": "Other",
+        "Year": "2013"
+    },
+    {
+        "State": "NY",
+        "Individuals_Affected": "1416",
+        "Type_of_Breach": "Theft",
+        "Location_of_Breached_Information": "Desktop Computer",
+        "Year": "2013"
+    },
+    {
+        "State": "UT",
+        "Individuals_Affected": "857",
+        "Type_of_Breach": "Unauthorized Access/Disclosure",
+        "Location_of_Breached_Information": "Other",
+        "Year": "2013"
+    },
+    {
+        "State": "UT",
+        "Individuals_Affected": "700",
+        "Type_of_Breach": "Theft",
+        "Location_of_Breached_Information": "Desktop Computer",
+        "Year": "2013"
+    },
+    {
+        "State": "PA",
+        "Individuals_Affected": "14829",
+        "Type_of_Breach": "Loss",
+        "Location_of_Breached_Information": "Paper",
+        "Year": "2013"
+    },
+    {
+        "State": "NC",
+        "Individuals_Affected": "17300",
+        "Type_of_Breach": "Theft, Improper Disposal, Unauthorized Access/Disclosure",
+        "Location_of_Breached_Information": "Paper",
+        "Year": "2013"
+    },
+    {
+        "State": "NC",
+        "Individuals_Affected": "1580",
+        "Type_of_Breach": "Theft",
+        "Location_of_Breached_Information": "Desktop Computer",
+        "Year": "2013"
+    },
+    {
+        "State": "AZ",
+        "Individuals_Affected": "3800",
+        "Type_of_Breach": "Theft",
+        "Location_of_Breached_Information": "Other Portable Electronic Device",
+        "Year": "2013"
+    },
+    {
+        "State": "OH",
+        "Individuals_Affected": "2500",
+        "Type_of_Breach": "Theft",
+        "Location_of_Breached_Information": "Other",
+        "Year": "2013"
+    },
+    {
+        "State": "NY",
+        "Individuals_Affected": "537",
+        "Type_of_Breach": "Loss",
+        "Location_of_Breached_Information": "Other Portable Electronic Device",
+        "Year": "2013"
+    },
+    {
+        "State": "TX",
+        "Individuals_Affected": "22000",
+        "Type_of_Breach": "Loss",
+        "Location_of_Breached_Information": "Other Portable Electronic Device",
+        "Year": "2013"
+    },
+    {
+        "State": "WA",
+        "Individuals_Affected": "750",
+        "Type_of_Breach": "Improper Disposal",
+        "Location_of_Breached_Information": "Paper",
+        "Year": "2013"
+    },
+    {
+        "State": "TN",
+        "Individuals_Affected": "1180",
+        "Type_of_Breach": "Unauthorized Access/Disclosure",
+        "Location_of_Breached_Information": "E-mail",
+        "Year": "2013"
+    },
+    {
+        "State": "NC",
+        "Individuals_Affected": "9988",
+        "Type_of_Breach": "Hacking/IT Incident",
+        "Location_of_Breached_Information": "Network Server",
+        "Year": "2013"
+    },
+    {
+        "State": "TN",
+        "Individuals_Affected": "539",
+        "Type_of_Breach": "Other",
+        "Location_of_Breached_Information": "Desktop Computer",
+        "Year": "2013"
+    },
+    {
+        "State": "NC",
+        "Individuals_Affected": "1924",
+        "Type_of_Breach": "Hacking/IT Incident",
+        "Location_of_Breached_Information": "Network Server",
+        "Year": "2013"
+    },
+    {
+        "State": "IN",
+        "Individuals_Affected": "10350",
+        "Type_of_Breach": "Theft",
+        "Location_of_Breached_Information": "Laptop",
+        "Year": "2013"
+    },
+    {
+        "State": "NY",
+        "Individuals_Affected": "10000",
+        "Type_of_Breach": "Other",
+        "Location_of_Breached_Information": "E-mail",
+        "Year": "2013"
+    },
+    {
+        "State": "OH",
+        "Individuals_Affected": "9577",
+        "Type_of_Breach": "Loss",
+        "Location_of_Breached_Information": "Laptop",
+        "Year": "2013"
+    },
+    {
+        "State": "IN",
+        "Individuals_Affected": "5388",
+        "Type_of_Breach": "Improper Disposal",
+        "Location_of_Breached_Information": "Other",
+        "Year": "2013"
+    },
+    {
+        "State": "IN",
+        "Individuals_Affected": "2723",
+        "Type_of_Breach": "Hacking/IT Incident",
+        "Location_of_Breached_Information": "Desktop Computer",
+        "Year": "2013"
+    },
+    {
+        "State": "AR",
+        "Individuals_Affected": "1900",
+        "Type_of_Breach": "Theft, Unauthorized Access/Disclosure",
+        "Location_of_Breached_Information": "Other",
+        "Year": "2013"
+    },
+    {
+        "State": "AL",
+        "Individuals_Affected": "3164",
+        "Type_of_Breach": "Theft",
+        "Location_of_Breached_Information": "Laptop",
+        "Year": "2013"
+    },
+    {
+        "State": "NY",
+        "Individuals_Affected": "2434",
+        "Type_of_Breach": "Theft",
+        "Location_of_Breached_Information": "Laptop",
+        "Year": "2013"
+    },
+    {
+        "State": "CA",
+        "Individuals_Affected": "1386",
+        "Type_of_Breach": "Other",
+        "Location_of_Breached_Information": "Other",
+        "Year": "2013"
+    },
+    {
+        "State": "OH",
+        "Individuals_Affected": "1167",
+        "Type_of_Breach": "Theft",
+        "Location_of_Breached_Information": "E-mail",
+        "Year": "2013"
+    },
+    {
+        "State": "FL",
+        "Individuals_Affected": "877",
+        "Type_of_Breach": "Unauthorized Access/Disclosure",
+        "Location_of_Breached_Information": "Desktop Computer",
+        "Year": "2013"
+    },
+    {
+        "State": "CA",
+        "Individuals_Affected": "12900",
+        "Type_of_Breach": "Theft",
+        "Location_of_Breached_Information": "Laptop",
+        "Year": "2013"
+    },
+    {
+        "State": "NC",
+        "Individuals_Affected": "1093",
+        "Type_of_Breach": "Improper Disposal",
+        "Location_of_Breached_Information": "Paper",
+        "Year": "2013"
+    },
+    {
+        "State": "OR",
+        "Individuals_Affected": "959",
+        "Type_of_Breach": "Unauthorized Access/Disclosure",
+        "Location_of_Breached_Information": "Paper",
+        "Year": "2013"
+    },
+    {
+        "State": "MO",
+        "Individuals_Affected": "1127",
+        "Type_of_Breach": "Improper Disposal",
+        "Location_of_Breached_Information": "E-mail",
+        "Year": "2013"
+    },
+    {
+        "State": "FL",
+        "Individuals_Affected": "9626",
+        "Type_of_Breach": "Theft, Unauthorized Access/Disclosure",
+        "Location_of_Breached_Information": "Desktop Computer, Network Server, E-mail, Electronic Medical Record, Paper",
+        "Year": "2013"
+    },
+    {
+        "State": "FL",
+        "Individuals_Affected": "5200",
+        "Type_of_Breach": "Unauthorized Access/Disclosure",
+        "Location_of_Breached_Information": "Paper",
+        "Year": "2013"
+    },
+    {
+        "State": "IA",
+        "Individuals_Affected": "7335",
+        "Type_of_Breach": "Loss, Unknown",
+        "Location_of_Breached_Information": "Other",
+        "Year": "2013"
+    },
+    {
+        "State": "NE",
+        "Individuals_Affected": "2125",
+        "Type_of_Breach": "Loss",
+        "Location_of_Breached_Information": "Other Portable Electronic Device",
+        "Year": "2013"
+    },
+    {
+        "State": "TX",
+        "Individuals_Affected": "1955",
+        "Type_of_Breach": "Theft",
+        "Location_of_Breached_Information": "Laptop",
+        "Year": "2013"
+    },
+    {
+        "State": "GA",
+        "Individuals_Affected": "679",
+        "Type_of_Breach": "Theft",
+        "Location_of_Breached_Information": "Laptop",
+        "Year": "2013"
+    },
+    {
+        "State": "IN",
+        "Individuals_Affected": "187533",
+        "Type_of_Breach": "Other",
+        "Location_of_Breached_Information": "Paper",
+        "Year": "2013"
+    },
+    {
+        "State": "VA",
+        "Individuals_Affected": "4305",
+        "Type_of_Breach": "Theft",
+        "Location_of_Breached_Information": "Paper",
+        "Year": "2013"
+    },
+    {
+        "State": "CA",
+        "Individuals_Affected": "8331",
+        "Type_of_Breach": "Other",
+        "Location_of_Breached_Information": "Paper",
+        "Year": "2013"
+    },
+    {
+        "State": "FL",
+        "Individuals_Affected": "900",
+        "Type_of_Breach": "Theft",
+        "Location_of_Breached_Information": "Laptop",
+        "Year": "2013"
+    },
+    {
+        "State": "OH",
+        "Individuals_Affected": "2203",
+        "Type_of_Breach": "Other",
+        "Location_of_Breached_Information": "Paper",
+        "Year": "2013"
+    },
+    {
+        "State": "NC",
+        "Individuals_Affected": "609",
+        "Type_of_Breach": "Other",
+        "Location_of_Breached_Information": "E-mail",
+        "Year": "2013"
+    },
+    {
+        "State": "IL",
+        "Individuals_Affected": "3133",
+        "Type_of_Breach": "Other",
+        "Location_of_Breached_Information": "Paper",
+        "Year": "2013"
+    },
+    {
+        "State": "PA",
+        "Individuals_Affected": "4718",
+        "Type_of_Breach": "Loss",
+        "Location_of_Breached_Information": "Paper",
+        "Year": "2013"
+    },
+    {
+        "State": "MN",
+        "Individuals_Affected": "2764",
+        "Type_of_Breach": "Loss",
+        "Location_of_Breached_Information": "Paper",
+        "Year": "2013"
+    },
+    {
+        "State": "TX",
+        "Individuals_Affected": "277014",
+        "Type_of_Breach": "Improper Disposal",
+        "Location_of_Breached_Information": "Other",
+        "Year": "2013"
+    },
+    {
+        "State": "WY",
+        "Individuals_Affected": "2700",
+        "Type_of_Breach": "Theft",
+        "Location_of_Breached_Information": "Desktop Computer",
+        "Year": "2013"
+    },
+    {
+        "State": "FL",
+        "Individuals_Affected": "710",
+        "Type_of_Breach": "Unauthorized Access/Disclosure",
+        "Location_of_Breached_Information": "Desktop Computer",
+        "Year": "2013"
+    },
+    {
+        "State": "NY",
+        "Individuals_Affected": "2700",
+        "Type_of_Breach": "Loss",
+        "Location_of_Breached_Information": "Other Portable Electronic Device",
+        "Year": "2013"
+    },
+    {
+        "State": "CO",
+        "Individuals_Affected": "532",
+        "Type_of_Breach": "Theft, Unauthorized Access/Disclosure",
+        "Location_of_Breached_Information": "Network Server",
+        "Year": "2013"
+    },
+    {
+        "State": "CA",
+        "Individuals_Affected": "1837",
+        "Type_of_Breach": "Theft",
+        "Location_of_Breached_Information": "Laptop",
+        "Year": "2013"
+    },
+    {
+        "State": "AR",
+        "Individuals_Affected": "1911",
+        "Type_of_Breach": "Theft",
+        "Location_of_Breached_Information": "Laptop",
+        "Year": "2013"
+    },
+    {
+        "State": "TX",
+        "Individuals_Affected": "940",
+        "Type_of_Breach": "Unauthorized Access/Disclosure",
+        "Location_of_Breached_Information": "Other Portable Electronic Device",
+        "Year": "2013"
+    },
+    {
+        "State": "TN",
+        "Individuals_Affected": "32151",
+        "Type_of_Breach": "Unauthorized Access/Disclosure",
+        "Location_of_Breached_Information": "Network Server",
+        "Year": "2013"
+    },
+    {
+        "State": "OH",
+        "Individuals_Affected": "2045",
+        "Type_of_Breach": "Theft",
+        "Location_of_Breached_Information": "Laptop",
+        "Year": "2013"
+    },
+    {
+        "State": "IN",
+        "Individuals_Affected": "5497",
+        "Type_of_Breach": "Other",
+        "Location_of_Breached_Information": "Other",
+        "Year": "2013"
+    },
+    {
+        "State": "TN",
+        "Individuals_Affected": "5690",
+        "Type_of_Breach": "Theft",
+        "Location_of_Breached_Information": "Laptop",
+        "Year": "2013"
+    },
+    {
+        "State": "CA",
+        "Individuals_Affected": "1033",
+        "Type_of_Breach": "Other",
+        "Location_of_Breached_Information": "Paper",
+        "Year": "2013"
+    },
+    {
+        "State": "TX",
+        "Individuals_Affected": "3200",
+        "Type_of_Breach": "Theft, Loss",
+        "Location_of_Breached_Information": "Other Portable Electronic Device",
+        "Year": "2013"
+    },
+    {
+        "State": "FL",
+        "Individuals_Affected": "1471",
+        "Type_of_Breach": "Other",
+        "Location_of_Breached_Information": "Paper",
+        "Year": "2013"
+    },
+    {
+        "State": "IL",
+        "Individuals_Affected": "4029530",
+        "Type_of_Breach": "Theft",
+        "Location_of_Breached_Information": "Desktop Computer",
+        "Year": "2013"
+    },
+    {
+        "State": "CO",
+        "Individuals_Affected": "921",
+        "Type_of_Breach": "Hacking/IT Incident",
+        "Location_of_Breached_Information": "Desktop Computer",
+        "Year": "2013"
+    },
+    {
+        "State": "TX",
+        "Individuals_Affected": "596",
+        "Type_of_Breach": "Theft, Loss",
+        "Location_of_Breached_Information": "Laptop",
+        "Year": "2013"
+    },
+    {
+        "State": "CA",
+        "Individuals_Affected": "32000",
+        "Type_of_Breach": "Other",
+        "Location_of_Breached_Information": "Network Server",
+        "Year": "2013"
+    },
+    {
+        "State": "GA",
+        "Individuals_Affected": "654",
+        "Type_of_Breach": "Other",
+        "Location_of_Breached_Information": "E-mail",
+        "Year": "2013"
+    },
+    {
+        "State": "MO",
+        "Individuals_Affected": "2600",
+        "Type_of_Breach": "Theft",
+        "Location_of_Breached_Information": "Laptop, Other Portable Electronic Device",
+        "Year": "2013"
+    },
+    {
+        "State": "CO",
+        "Individuals_Affected": "1500",
+        "Type_of_Breach": "Theft",
+        "Location_of_Breached_Information": "Laptop",
+        "Year": "2013"
+    },
+    {
+        "State": "MO",
+        "Individuals_Affected": "10000",
+        "Type_of_Breach": "Theft",
+        "Location_of_Breached_Information": "Desktop Computer, Network Server",
+        "Year": "2013"
+    },
+    {
+        "State": "OR",
+        "Individuals_Affected": "647",
+        "Type_of_Breach": "Unauthorized Access/Disclosure",
+        "Location_of_Breached_Information": "Electronic Medical Record",
+        "Year": "2013"
+    },
+    {
+        "State": "CA",
+        "Individuals_Affected": "2182",
+        "Type_of_Breach": "Theft",
+        "Location_of_Breached_Information": "Laptop",
+        "Year": "2013"
+    },
+    {
+        "State": "IL",
+        "Individuals_Affected": "1290",
+        "Type_of_Breach": "Hacking/IT Incident",
+        "Location_of_Breached_Information": "Other",
+        "Year": "2013"
+    },
+    {
+        "State": "PR",
+        "Individuals_Affected": "5000",
+        "Type_of_Breach": "Theft",
+        "Location_of_Breached_Information": "Network Server",
+        "Year": "2013"
+    },
+    {
+        "State": "TN",
+        "Individuals_Affected": "4268",
+        "Type_of_Breach": "Loss",
+        "Location_of_Breached_Information": "Other",
+        "Year": "2013"
+    },
+    {
+        "State": "SC",
+        "Individuals_Affected": "4204",
+        "Type_of_Breach": "Improper Disposal",
+        "Location_of_Breached_Information": "Other",
+        "Year": "2013"
+    },
+    {
+        "State": "IL",
+        "Individuals_Affected": "2029",
+        "Type_of_Breach": "Hacking/IT Incident",
+        "Location_of_Breached_Information": "Network Server",
+        "Year": "2013"
+    },
+    {
+        "State": "IL",
+        "Individuals_Affected": "998",
+        "Type_of_Breach": "Hacking/IT Incident",
+        "Location_of_Breached_Information": "Network Server",
+        "Year": "2013"
+    },
+    {
+        "State": "FL",
+        "Individuals_Affected": "916",
+        "Type_of_Breach": "Unknown",
+        "Location_of_Breached_Information": "Other",
+        "Year": "2013"
+    },
+    {
+        "State": "CA",
+        "Individuals_Affected": "1009",
+        "Type_of_Breach": "Unauthorized Access/Disclosure",
+        "Location_of_Breached_Information": "Electronic Medical Record",
+        "Year": "2013"
+    },
+    {
+        "State": "FL",
+        "Individuals_Affected": "9900",
+        "Type_of_Breach": "Theft, Unauthorized Access/Disclosure",
+        "Location_of_Breached_Information": "Desktop Computer, Network Server",
+        "Year": "2013"
+    },
+    {
+        "State": "VA",
+        "Individuals_Affected": "10228",
+        "Type_of_Breach": "Hacking/IT Incident",
+        "Location_of_Breached_Information": "E-mail",
+        "Year": "2013"
+    },
+    {
+        "State": "OH",
+        "Individuals_Affected": "1360",
+        "Type_of_Breach": "Theft",
+        "Location_of_Breached_Information": "Laptop",
+        "Year": "2013"
+    },
+    {
+        "State": "CA",
+        "Individuals_Affected": "579",
+        "Type_of_Breach": "Theft",
+        "Location_of_Breached_Information": "Laptop",
+        "Year": "2013"
+    },
+    {
+        "State": "CO",
+        "Individuals_Affected": "3512",
+        "Type_of_Breach": "Theft",
+        "Location_of_Breached_Information": "Laptop",
+        "Year": "2013"
+    },
+    {
+        "State": "OH",
+        "Individuals_Affected": "517",
+        "Type_of_Breach": "Theft",
+        "Location_of_Breached_Information": "Network Server",
+        "Year": "2013"
+    },
+    {
+        "State": "TN",
+        "Individuals_Affected": "6932",
+        "Type_of_Breach": "Theft",
+        "Location_of_Breached_Information": "Laptop",
+        "Year": "2013"
+    },
+    {
+        "State": "NJ",
+        "Individuals_Affected": "2500",
+        "Type_of_Breach": "Theft",
+        "Location_of_Breached_Information": "Laptop",
+        "Year": "2013"
+    },
+    {
+        "State": "IA",
+        "Individuals_Affected": "1825",
+        "Type_of_Breach": "Unauthorized Access/Disclosure",
+        "Location_of_Breached_Information": "Electronic Medical Record",
+        "Year": "2013"
+    },
+    {
+        "State": "GA",
+        "Individuals_Affected": "5232",
+        "Type_of_Breach": "Theft",
+        "Location_of_Breached_Information": "E-mail",
+        "Year": "2013"
+    },
+    {
+        "State": "CA",
+        "Individuals_Affected": "3553",
+        "Type_of_Breach": "Theft",
+        "Location_of_Breached_Information": "Laptop, Paper",
+        "Year": "2013"
+    },
+    {
+        "State": "PA",
+        "Individuals_Affected": "2350",
+        "Type_of_Breach": "Theft, Unauthorized Access/Disclosure",
+        "Location_of_Breached_Information": "Paper",
+        "Year": "2013"
+    },
+    {
+        "State": "WA",
+        "Individuals_Affected": "1015",
+        "Type_of_Breach": "Other",
+        "Location_of_Breached_Information": "Paper",
+        "Year": "2013"
+    },
+    {
+        "State": "PA",
+        "Individuals_Affected": "2810",
+        "Type_of_Breach": "Theft",
+        "Location_of_Breached_Information": "Laptop",
+        "Year": "2013"
+    },
+    {
+        "State": "NC",
+        "Individuals_Affected": "1310",
+        "Type_of_Breach": "Other",
+        "Location_of_Breached_Information": "E-mail",
+        "Year": "2013"
+    },
+    {
+        "State": "NY",
+        "Individuals_Affected": "1586",
+        "Type_of_Breach": "Improper Disposal",
+        "Location_of_Breached_Information": "Paper",
+        "Year": "2013"
+    },
+    {
+        "State": "WI",
+        "Individuals_Affected": "4330",
+        "Type_of_Breach": "Unauthorized Access/Disclosure",
+        "Location_of_Breached_Information": "Paper",
+        "Year": "2013"
+    },
+    {
+        "State": "MO",
+        "Individuals_Affected": "3100",
+        "Type_of_Breach": "Unauthorized Access/Disclosure",
+        "Location_of_Breached_Information": "E-mail",
+        "Year": "2013"
+    },
+    {
+        "State": "SC",
+        "Individuals_Affected": "7120",
+        "Type_of_Breach": "Hacking/IT Incident",
+        "Location_of_Breached_Information": "Network Server",
+        "Year": "2013"
+    },
+    {
+        "State": "IN",
+        "Individuals_Affected": "566",
+        "Type_of_Breach": "Theft",
+        "Location_of_Breached_Information": "Laptop",
+        "Year": "2013"
+    },
+    {
+        "State": "CO",
+        "Individuals_Affected": "606",
+        "Type_of_Breach": "Improper Disposal",
+        "Location_of_Breached_Information": "Paper",
+        "Year": "2013"
+    },
+    {
+        "State": "IL",
+        "Individuals_Affected": "1067",
+        "Type_of_Breach": "Unauthorized Access/Disclosure",
+        "Location_of_Breached_Information": "E-mail",
+        "Year": "2013"
+    },
+    {
+        "State": "VT",
+        "Individuals_Affected": "550",
+        "Type_of_Breach": "Theft",
+        "Location_of_Breached_Information": "Laptop",
+        "Year": "2013"
+    },
+    {
+        "State": "AK",
+        "Individuals_Affected": "1556",
+        "Type_of_Breach": "Unauthorized Access/Disclosure",
+        "Location_of_Breached_Information": "E-mail",
+        "Year": "2013"
+    },
+    {
+        "State": "NY",
+        "Individuals_Affected": "610",
+        "Type_of_Breach": "Loss",
+        "Location_of_Breached_Information": "Other Portable Electronic Device",
+        "Year": "2013"
+    },
+    {
+        "State": "TX",
+        "Individuals_Affected": "949",
+        "Type_of_Breach": "Theft",
+        "Location_of_Breached_Information": "Desktop Computer",
+        "Year": "2013"
+    },
+    {
+        "State": "TX",
+        "Individuals_Affected": "5500",
+        "Type_of_Breach": "Theft",
+        "Location_of_Breached_Information": "Laptop",
+        "Year": "2013"
+    },
+    {
+        "State": "MO",
+        "Individuals_Affected": "1300",
+        "Type_of_Breach": "Unauthorized Access/Disclosure",
+        "Location_of_Breached_Information": "E-mail",
+        "Year": "2013"
+    },
+    {
+        "State": "CA",
+        "Individuals_Affected": "3833",
+        "Type_of_Breach": "Theft",
+        "Location_of_Breached_Information": "Laptop",
+        "Year": "2013"
+    },
+    {
+        "State": "WI",
+        "Individuals_Affected": "631",
+        "Type_of_Breach": "Theft",
+        "Location_of_Breached_Information": "Laptop",
+        "Year": "2013"
+    },
+    {
+        "State": "CA",
+        "Individuals_Affected": "729000",
+        "Type_of_Breach": "Theft",
+        "Location_of_Breached_Information": "Laptop",
+        "Year": "2013"
+    },
+    {
+        "State": "TX",
+        "Individuals_Affected": "5840",
+        "Type_of_Breach": "Theft",
+        "Location_of_Breached_Information": "Desktop Computer",
+        "Year": "2013"
+    },
+    {
+        "State": "FL",
+        "Individuals_Affected": "603",
+        "Type_of_Breach": "Improper Disposal",
+        "Location_of_Breached_Information": "Paper",
+        "Year": "2013"
+    },
+    {
+        "State": "PA",
+        "Individuals_Affected": "2300",
+        "Type_of_Breach": "Unauthorized Access/Disclosure",
+        "Location_of_Breached_Information": "Network Server",
+        "Year": "2013"
+    },
+    {
+        "State": "SC",
+        "Individuals_Affected": "3500",
+        "Type_of_Breach": "Theft",
+        "Location_of_Breached_Information": "Laptop",
+        "Year": "2013"
+    },
+    {
+        "State": "TX",
+        "Individuals_Affected": "6284",
+        "Type_of_Breach": "Other",
+        "Location_of_Breached_Information": "Paper",
+        "Year": "2013"
+    },
+    {
+        "State": "PA",
+        "Individuals_Affected": "1167",
+        "Type_of_Breach": "Loss",
+        "Location_of_Breached_Information": "Other Portable Electronic Device",
+        "Year": "2013"
+    },
+    {
+        "State": "CO",
+        "Individuals_Affected": "651",
+        "Type_of_Breach": "Theft, Unauthorized Access/Disclosure",
+        "Location_of_Breached_Information": "Electronic Medical Record",
+        "Year": "2013"
+    },
+    {
+        "State": "NJ",
+        "Individuals_Affected": "1100",
+        "Type_of_Breach": "Theft",
+        "Location_of_Breached_Information": "Laptop",
+        "Year": "2013"
+    },
+    {
+        "State": "CO",
+        "Individuals_Affected": "11500",
+        "Type_of_Breach": "Theft, Other",
+        "Location_of_Breached_Information": "Laptop",
+        "Year": "2013"
+    },
+    {
+        "State": "NC",
+        "Individuals_Affected": "687",
+        "Type_of_Breach": "Unauthorized Access/Disclosure",
+        "Location_of_Breached_Information": "Paper",
+        "Year": "2013"
+    },
+    {
+        "State": "NC",
+        "Individuals_Affected": "1315",
+        "Type_of_Breach": "Unauthorized Access/Disclosure",
+        "Location_of_Breached_Information": "Other",
+        "Year": "2013"
+    },
+    {
+        "State": "PR",
+        "Individuals_Affected": "13336",
+        "Type_of_Breach": "Unauthorized Access/Disclosure",
+        "Location_of_Breached_Information": "Paper",
+        "Year": "2013"
+    },
+    {
+        "State": "PR",
+        "Individuals_Affected": "70189",
+        "Type_of_Breach": "Unauthorized Access/Disclosure",
+        "Location_of_Breached_Information": "Paper",
+        "Year": "2013"
+    },
+    {
+        "State": "ND",
+        "Individuals_Affected": "2000",
+        "Type_of_Breach": "Theft, Other",
+        "Location_of_Breached_Information": "Paper",
+        "Year": "2013"
+    },
+    {
+        "State": "MD",
+        "Individuals_Affected": "7606",
+        "Type_of_Breach": "Unauthorized Access/Disclosure",
+        "Location_of_Breached_Information": "E-mail",
+        "Year": "2013"
+    },
+    {
+        "State": "AZ",
+        "Individuals_Affected": "1456",
+        "Type_of_Breach": "Theft",
+        "Location_of_Breached_Information": "Other",
+        "Year": "2013"
+    },
+    {
+        "State": "NY",
+        "Individuals_Affected": "2279",
+        "Type_of_Breach": "Loss",
+        "Location_of_Breached_Information": "Other Portable Electronic Device",
+        "Year": "2013"
+    },
+    {
+        "State": "FL",
+        "Individuals_Affected": "3804",
+        "Type_of_Breach": "Theft",
+        "Location_of_Breached_Information": "Laptop",
+        "Year": "2013"
+    },
+    {
+        "State": "MI",
+        "Individuals_Affected": "4837",
+        "Type_of_Breach": "Theft",
+        "Location_of_Breached_Information": "Laptop",
+        "Year": "2013"
+    },
+    {
+        "State": "GA",
+        "Individuals_Affected": "1300",
+        "Type_of_Breach": "Theft",
+        "Location_of_Breached_Information": "Laptop",
+        "Year": "2013"
+    },
+    {
+        "State": "WI",
+        "Individuals_Affected": "9328",
+        "Type_of_Breach": "Theft",
+        "Location_of_Breached_Information": "Other Portable Electronic Device",
+        "Year": "2013"
+    },
+    {
+        "State": "CA",
+        "Individuals_Affected": "1039",
+        "Type_of_Breach": "Loss",
+        "Location_of_Breached_Information": "Other Portable Electronic Device",
+        "Year": "2013"
+    },
+    {
+        "State": "CA",
+        "Individuals_Affected": "49000",
+        "Type_of_Breach": "Loss",
+        "Location_of_Breached_Information": "Other Portable Electronic Device",
+        "Year": "2013"
+    },
+    {
+        "State": "IN",
+        "Individuals_Affected": "1500",
+        "Type_of_Breach": "Theft",
+        "Location_of_Breached_Information": "Desktop Computer",
+        "Year": "2013"
+    },
+    {
+        "State": "WA",
+        "Individuals_Affected": "950",
+        "Type_of_Breach": "Theft",
+        "Location_of_Breached_Information": "Laptop",
+        "Year": "2013"
+    },
+    {
+        "State": "WA",
+        "Individuals_Affected": "76183",
+        "Type_of_Breach": "Hacking/IT Incident",
+        "Location_of_Breached_Information": "Desktop Computer",
+        "Year": "2013"
+    },
+    {
+        "State": "IL",
+        "Individuals_Affected": "2080",
+        "Type_of_Breach": "Unauthorized Access/Disclosure",
+        "Location_of_Breached_Information": "Network Server",
+        "Year": "2013"
+    },
+    {
+        "State": "IL",
+        "Individuals_Affected": "1573",
+        "Type_of_Breach": "Unauthorized Access/Disclosure",
+        "Location_of_Breached_Information": "E-mail",
+        "Year": "2013"
+    },
+    {
+        "State": "IL",
+        "Individuals_Affected": "1891",
+        "Type_of_Breach": "Theft, Loss",
+        "Location_of_Breached_Information": "Laptop",
+        "Year": "2013"
+    },
+    {
+        "State": "GA",
+        "Individuals_Affected": "5000",
+        "Type_of_Breach": "Other",
+        "Location_of_Breached_Information": "Desktop Computer",
+        "Year": "2013"
+    },
+    {
+        "State": "GA",
+        "Individuals_Affected": "4500",
+        "Type_of_Breach": "Theft",
+        "Location_of_Breached_Information": "Laptop",
+        "Year": "2013"
+    },
+    {
+        "State": "IL",
+        "Individuals_Affected": "17350",
+        "Type_of_Breach": "Other",
+        "Location_of_Breached_Information": "Paper",
+        "Year": "2013"
+    },
+    {
+        "State": "FL",
+        "Individuals_Affected": "4400",
+        "Type_of_Breach": "Unauthorized Access/Disclosure",
+        "Location_of_Breached_Information": "Desktop Computer",
+        "Year": "2013"
+    },
+    {
+        "State": "GA",
+        "Individuals_Affected": "4879",
+        "Type_of_Breach": "Loss",
+        "Location_of_Breached_Information": "Laptop",
+        "Year": "2013"
+    },
+    {
+        "State": "KY",
+        "Individuals_Affected": "535",
+        "Type_of_Breach": "Theft",
+        "Location_of_Breached_Information": "Other Portable Electronic Device",
+        "Year": "2013"
+    },
+    {
+        "State": "CA",
+        "Individuals_Affected": "59000",
+        "Type_of_Breach": "Hacking/IT Incident",
+        "Location_of_Breached_Information": "Network Server",
+        "Year": "2013"
+    },
+    {
+        "State": "NE",
+        "Individuals_Affected": "3857",
+        "Type_of_Breach": "Other",
+        "Location_of_Breached_Information": "E-mail",
+        "Year": "2013"
+    },
+    {
+        "State": "NJ",
+        "Individuals_Affected": "9642",
+        "Type_of_Breach": "Loss",
+        "Location_of_Breached_Information": "Other Portable Electronic Device",
+        "Year": "2013"
+    },
+    {
+        "State": "VA",
+        "Individuals_Affected": "1499",
+        "Type_of_Breach": "Unauthorized Access/Disclosure",
+        "Location_of_Breached_Information": "Network Server",
+        "Year": "2013"
+    },
+    {
+        "State": "WY",
+        "Individuals_Affected": "11935",
+        "Type_of_Breach": "Unauthorized Access/Disclosure",
+        "Location_of_Breached_Information": "Network Server",
+        "Year": "2013"
+    },
+    {
+        "State": "MT",
+        "Individuals_Affected": "1900",
+        "Type_of_Breach": "Unauthorized Access/Disclosure",
+        "Location_of_Breached_Information": "Desktop Computer, E-mail",
+        "Year": "2013"
+    },
+    {
+        "State": "SC",
+        "Individuals_Affected": "3432",
+        "Type_of_Breach": "Theft",
+        "Location_of_Breached_Information": "Laptop",
+        "Year": "2013"
+    },
+    {
+        "State": "TN",
+        "Individuals_Affected": "2777",
+        "Type_of_Breach": "Theft",
+        "Location_of_Breached_Information": "Laptop",
+        "Year": "2013"
+    },
+    {
+        "State": "PA",
+        "Individuals_Affected": "1674",
+        "Type_of_Breach": "Loss",
+        "Location_of_Breached_Information": "Paper",
+        "Year": "2013"
+    },
+    {
+        "State": "TX",
+        "Individuals_Affected": "2826",
+        "Type_of_Breach": "Other",
+        "Location_of_Breached_Information": "Paper",
+        "Year": "2013"
+    },
+    {
+        "State": "CA",
+        "Individuals_Affected": "1400",
+        "Type_of_Breach": "Theft",
+        "Location_of_Breached_Information": "Desktop Computer",
+        "Year": "2013"
+    },
+    {
+        "State": "MA",
+        "Individuals_Affected": "832",
+        "Type_of_Breach": "Unauthorized Access/Disclosure",
+        "Location_of_Breached_Information": "E-mail",
+        "Year": "2013"
+    },
+    {
+        "State": "NC",
+        "Individuals_Affected": "1683",
+        "Type_of_Breach": "Other",
+        "Location_of_Breached_Information": "Paper",
+        "Year": "2013"
+    },
+    {
+        "State": "FL",
+        "Individuals_Affected": "2354",
+        "Type_of_Breach": "Unauthorized Access/Disclosure",
+        "Location_of_Breached_Information": "Desktop Computer",
+        "Year": "2013"
+    },
+    {
+        "State": "NM",
+        "Individuals_Affected": "12354",
+        "Type_of_Breach": "Theft",
+        "Location_of_Breached_Information": "Laptop",
+        "Year": "2013"
+    },
+    {
+        "State": "CO",
+        "Individuals_Affected": "1918",
+        "Type_of_Breach": "Unauthorized Access/Disclosure",
+        "Location_of_Breached_Information": "E-mail",
+        "Year": "2013"
+    },
+    {
+        "State": "NJ",
+        "Individuals_Affected": "839711",
+        "Type_of_Breach": "Theft",
+        "Location_of_Breached_Information": "Laptop",
+        "Year": "2013"
+    },
+    {
+        "State": "GA",
+        "Individuals_Affected": "6989",
+        "Type_of_Breach": "Loss",
+        "Location_of_Breached_Information": "Desktop Computer",
+        "Year": "2013"
+    },
+    {
+        "State": "PA",
+        "Individuals_Affected": "3000",
+        "Type_of_Breach": "Other",
+        "Location_of_Breached_Information": "Paper",
+        "Year": "2013"
+    },
+    {
+        "State": "NC",
+        "Individuals_Affected": "48752",
+        "Type_of_Breach": "Unauthorized Access/Disclosure",
+        "Location_of_Breached_Information": "Other",
+        "Year": "2013"
+    },
+    {
+        "State": "CA",
+        "Individuals_Affected": "2500",
+        "Type_of_Breach": "Theft",
+        "Location_of_Breached_Information": "Laptop",
+        "Year": "2013"
+    },
+    {
+        "State": "MS",
+        "Individuals_Affected": "1489",
+        "Type_of_Breach": "Hacking/IT Incident",
+        "Location_of_Breached_Information": "Network Server",
+        "Year": "2013"
+    },
+    {
+        "State": "VA",
+        "Individuals_Affected": "25513",
+        "Type_of_Breach": "Unauthorized Access/Disclosure, Other",
+        "Location_of_Breached_Information": "Paper",
+        "Year": "2013"
+    },
+    {
+        "State": "IL",
+        "Individuals_Affected": "22511",
+        "Type_of_Breach": "Other",
+        "Location_of_Breached_Information": "E-mail",
+        "Year": "2013"
+    },
+    {
+        "State": "OH",
+        "Individuals_Affected": "953",
+        "Type_of_Breach": "Unknown",
+        "Location_of_Breached_Information": "Other",
+        "Year": "2013"
+    },
+    {
+        "State": "AL",
+        "Individuals_Affected": "1085",
+        "Type_of_Breach": "Other",
+        "Location_of_Breached_Information": "Other",
+        "Year": "2013"
+    },
+    {
+        "State": "OH",
+        "Individuals_Affected": "1420",
+        "Type_of_Breach": "Unauthorized Access/Disclosure",
+        "Location_of_Breached_Information": "Paper",
+        "Year": "2013"
+    },
+    {
+        "State": "WI",
+        "Individuals_Affected": "41437",
+        "Type_of_Breach": "Loss",
+        "Location_of_Breached_Information": "Other Portable Electronic Device",
+        "Year": "2013"
+    },
+    {
+        "State": "TX",
+        "Individuals_Affected": "3598",
+        "Type_of_Breach": "Loss",
+        "Location_of_Breached_Information": "Other Portable Electronic Device",
+        "Year": "2013"
+    },
+    {
+        "State": "DE",
+        "Individuals_Affected": "1883",
+        "Type_of_Breach": "Other",
+        "Location_of_Breached_Information": "Laptop",
+        "Year": "2013"
+    },
+    {
+        "State": "TX",
+        "Individuals_Affected": "405000",
+        "Type_of_Breach": "Hacking/IT Incident",
+        "Location_of_Breached_Information": "Network Server",
+        "Year": "2013"
+    },
+    {
+        "State": "CA",
+        "Individuals_Affected": "4676",
+        "Type_of_Breach": "Theft",
+        "Location_of_Breached_Information": "Other Portable Electronic Device",
+        "Year": "2013"
+    },
+    {
+        "State": "CA",
+        "Individuals_Affected": "3026",
+        "Type_of_Breach": "Theft",
+        "Location_of_Breached_Information": "Laptop",
+        "Year": "2013"
+    },
+    {
+        "State": "GA",
+        "Individuals_Affected": "841",
+        "Type_of_Breach": "Theft",
+        "Location_of_Breached_Information": "Laptop",
+        "Year": "2013"
+    },
+    {
+        "State": "OH",
+        "Individuals_Affected": "4230",
+        "Type_of_Breach": "Theft",
+        "Location_of_Breached_Information": "Network Server",
+        "Year": "2013"
+    },
+    {
+        "State": "TN",
+        "Individuals_Affected": "9602",
+        "Type_of_Breach": "Theft",
+        "Location_of_Breached_Information": "Laptop",
+        "Year": "2013"
+    },
+    {
+        "State": "CT",
+        "Individuals_Affected": "858",
+        "Type_of_Breach": "Theft",
+        "Location_of_Breached_Information": "Paper",
+        "Year": "2013"
+    },
+    {
+        "State": "MI",
+        "Individuals_Affected": "5370",
+        "Type_of_Breach": "Theft",
+        "Location_of_Breached_Information": "Network Server",
+        "Year": "2013"
+    },
+    {
+        "State": "KS",
+        "Individuals_Affected": "1700",
+        "Type_of_Breach": "Unauthorized Access/Disclosure",
+        "Location_of_Breached_Information": "Other Portable Electronic Device",
+        "Year": "2013"
+    },
+    {
+        "State": "NY",
+        "Individuals_Affected": "937",
+        "Type_of_Breach": "Theft",
+        "Location_of_Breached_Information": "Desktop Computer, Paper",
+        "Year": "2013"
+    },
+    {
+        "State": "NY",
+        "Individuals_Affected": "2172",
+        "Type_of_Breach": "Loss",
+        "Location_of_Breached_Information": "Other Portable Electronic Device",
+        "Year": "2013"
+    },
+    {
+        "State": "WA",
+        "Individuals_Affected": "3104",
+        "Type_of_Breach": "Unauthorized Access/Disclosure, Other",
+        "Location_of_Breached_Information": "Paper",
+        "Year": "2013"
+    },
+    {
+        "State": "FL",
+        "Individuals_Affected": "13074",
+        "Type_of_Breach": "Loss",
+        "Location_of_Breached_Information": "Paper",
+        "Year": "2013"
+    },
+    {
+        "State": "PA",
+        "Individuals_Affected": "593",
+        "Type_of_Breach": "Unauthorized Access/Disclosure",
+        "Location_of_Breached_Information": "Network Server",
+        "Year": "2013"
+    },
+    {
+        "State": "OH",
+        "Individuals_Affected": "1139",
+        "Type_of_Breach": "Other",
+        "Location_of_Breached_Information": "Other",
+        "Year": "2013"
+    },
+    {
+        "State": "CA",
+        "Individuals_Affected": "2269",
+        "Type_of_Breach": "Hacking/IT Incident",
+        "Location_of_Breached_Information": "E-mail",
+        "Year": "2013"
+    },
+    {
+        "State": "IN",
+        "Individuals_Affected": "1142",
+        "Type_of_Breach": "Theft",
+        "Location_of_Breached_Information": "Laptop",
+        "Year": "2013"
+    },
+    {
+        "State": "NJ",
+        "Individuals_Affected": "1411",
+        "Type_of_Breach": "Theft",
+        "Location_of_Breached_Information": "Desktop Computer",
+        "Year": "2013"
+    },
+    {
+        "State": "VA",
+        "Individuals_Affected": "3458",
+        "Type_of_Breach": "Theft",
+        "Location_of_Breached_Information": "Laptop",
+        "Year": "2013"
+    },
+    {
+        "State": "OH",
+        "Individuals_Affected": "8845",
+        "Type_of_Breach": "Unauthorized Access/Disclosure, Other",
+        "Location_of_Breached_Information": "Other",
+        "Year": "2013"
+    },
+    {
+        "State": "OH",
+        "Individuals_Affected": "504",
+        "Type_of_Breach": "Other",
+        "Location_of_Breached_Information": "Electronic Medical Record",
+        "Year": "2013"
+    },
+    {
+        "State": "NC",
+        "Individuals_Affected": "548",
+        "Type_of_Breach": "Theft, Loss",
+        "Location_of_Breached_Information": "Laptop",
+        "Year": "2013"
+    },
+    {
+        "State": "AR",
+        "Individuals_Affected": "600",
+        "Type_of_Breach": "Other",
+        "Location_of_Breached_Information": "Other",
+        "Year": "2013"
+    },
+    {
+        "State": "CA",
+        "Individuals_Affected": "3534",
+        "Type_of_Breach": "Improper Disposal",
+        "Location_of_Breached_Information": "Paper",
+        "Year": "2013"
+    },
+    {
+        "State": "TX",
+        "Individuals_Affected": "3300",
+        "Type_of_Breach": "Hacking/IT Incident",
+        "Location_of_Breached_Information": "Network Server",
+        "Year": "2013"
+    },
+    {
+        "State": "AL",
+        "Individuals_Affected": "1145",
+        "Type_of_Breach": "Hacking/IT Incident",
+        "Location_of_Breached_Information": "Network Server",
+        "Year": "2013"
+    },
+    {
+        "State": "AL",
+        "Individuals_Affected": "1179",
+        "Type_of_Breach": "Hacking/IT Incident",
+        "Location_of_Breached_Information": "Network Server",
+        "Year": "2013"
+    },
+    {
+        "State": "CA",
+        "Individuals_Affected": "7800",
+        "Type_of_Breach": "Theft",
+        "Location_of_Breached_Information": "E-mail",
+        "Year": "2013"
+    },
+    {
+        "State": "PA",
+        "Individuals_Affected": "5000",
+        "Type_of_Breach": "Other",
+        "Location_of_Breached_Information": "Other",
+        "Year": "2013"
+    },
+    {
+        "State": "CO",
+        "Individuals_Affected": "5415",
+        "Type_of_Breach": "Other",
+        "Location_of_Breached_Information": "Laptop, Desktop Computer",
+        "Year": "2013"
+    },
+    {
+        "State": "AZ",
+        "Individuals_Affected": "1706",
+        "Type_of_Breach": "Theft",
+        "Location_of_Breached_Information": "Laptop",
+        "Year": "2013"
+    },
+    {
+        "State": "MT",
+        "Individuals_Affected": "543",
+        "Type_of_Breach": "Theft",
+        "Location_of_Breached_Information": "Paper",
+        "Year": "2013"
+    },
+    {
+        "State": "PA",
+        "Individuals_Affected": "657",
+        "Type_of_Breach": "Unauthorized Access/Disclosure",
+        "Location_of_Breached_Information": "E-mail",
+        "Year": "2013"
+    },
+    {
+        "State": "UT",
+        "Individuals_Affected": "643",
+        "Type_of_Breach": "Unauthorized Access/Disclosure",
+        "Location_of_Breached_Information": "E-mail",
+        "Year": "2013"
+    },
+    {
+        "State": "TX",
+        "Individuals_Affected": "1000",
+        "Type_of_Breach": "Unauthorized Access/Disclosure",
+        "Location_of_Breached_Information": "Other",
+        "Year": "2013"
+    },
+    {
+        "State": "FL",
+        "Individuals_Affected": "580",
+        "Type_of_Breach": "Unauthorized Access/Disclosure",
+        "Location_of_Breached_Information": "Paper",
+        "Year": "2013"
+    },
+    {
+        "State": "PR",
+        "Individuals_Affected": "5795",
+        "Type_of_Breach": "Theft",
+        "Location_of_Breached_Information": "Other",
+        "Year": "2013"
+    },
+    {
+        "State": "PR",
+        "Individuals_Affected": "17776",
+        "Type_of_Breach": "Theft",
+        "Location_of_Breached_Information": "Other",
+        "Year": "2013"
+    },
+    {
+        "State": "IL",
+        "Individuals_Affected": "836",
+        "Type_of_Breach": "Other",
+        "Location_of_Breached_Information": "Paper",
+        "Year": "2013"
+    },
+    {
+        "State": "MO",
+        "Individuals_Affected": "2546",
+        "Type_of_Breach": "Unauthorized Access/Disclosure",
+        "Location_of_Breached_Information": "Other",
+        "Year": "2013"
+    },
+    {
+        "State": "TN",
+        "Individuals_Affected": "1144",
+        "Type_of_Breach": "Unauthorized Access/Disclosure",
+        "Location_of_Breached_Information": "Paper",
+        "Year": "2013"
+    },
+    {
+        "State": "PR",
+        "Individuals_Affected": "46473",
+        "Type_of_Breach": "Theft",
+        "Location_of_Breached_Information": "Other Portable Electronic Device",
+        "Year": "2013"
+    },
+    {
+        "State": "MD",
+        "Individuals_Affected": "10766",
+        "Type_of_Breach": "Unauthorized Access/Disclosure, Hacking/IT Incident",
+        "Location_of_Breached_Information": "Network Server",
+        "Year": "2013"
+    },
+    {
+        "State": "FL",
+        "Individuals_Affected": "2365",
+        "Type_of_Breach": "Theft, Unauthorized Access/Disclosure",
+        "Location_of_Breached_Information": "Laptop",
+        "Year": "2013"
+    },
+    {
+        "State": "AL",
+        "Individuals_Affected": "629",
+        "Type_of_Breach": "Theft",
+        "Location_of_Breached_Information": "Paper",
+        "Year": "2013"
+    },
+    {
+        "State": "PR",
+        "Individuals_Affected": "11531",
+        "Type_of_Breach": "Unauthorized Access/Disclosure",
+        "Location_of_Breached_Information": "Paper",
+        "Year": "2013"
+    },
+    {
+        "State": "OH",
+        "Individuals_Affected": "594",
+        "Type_of_Breach": "Unauthorized Access/Disclosure",
+        "Location_of_Breached_Information": "Network Server, Electronic Medical Record",
+        "Year": "2013"
+    },
+    {
+        "State": "PR",
+        "Individuals_Affected": "56853",
+        "Type_of_Breach": "Unauthorized Access/Disclosure",
+        "Location_of_Breached_Information": "Paper",
+        "Year": "2013"
+    },
+    {
+        "State": "CA",
+        "Individuals_Affected": "5845",
+        "Type_of_Breach": "Theft",
+        "Location_of_Breached_Information": "Desktop Computer",
+        "Year": "2013"
+    },
+    {
+        "State": "PA",
+        "Individuals_Affected": "1801",
+        "Type_of_Breach": "Other",
+        "Location_of_Breached_Information": "E-mail, Other Portable Electronic Device",
+        "Year": "2013"
+    },
+    {
+        "State": "PR",
+        "Individuals_Affected": "28413",
+        "Type_of_Breach": "Theft",
+        "Location_of_Breached_Information": "Other",
+        "Year": "2013"
+    }
+]

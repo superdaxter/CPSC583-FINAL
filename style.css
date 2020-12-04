@@ -24,23 +24,19 @@ p {
 }
 
 #legend2 {
-    height: 300px;
-    width: 50px;
-    background-color: #555;
     margin: auto;
-    margin-top:40px;
-    background-image: linear-gradient( #005241, #e6faf6);
-    border-style: solid;
-    border-color: black;
-    border-width: 1px;
+    /* background-image: linear-gradient(to right, white, rgba(0,0,255,1)); */
     float: right;
 }
 
 body {
-    background-color: antiquewhite;
+    background-color: #9ef5ff;
 }
 
-#navText {
-    font-family: 'Courier New', Courier, monospace;
-    color: darkblue;
+#space {
+    width: 600px;
+}
+
+#btnspace {
+    width: 500px !important;
 }

@@ -1,0 +1,93 @@
+﻿[
+    {
+        "State": "KY",
+        "Individuals_Affected": "708",
+        "Type_of_Breach": "Hacking/IT Incident",
+        "Location_of_Breached_Information": "Network Server",
+        "Year": "2008"
+    },
+    {
+        "State": "PR",
+        "Individuals_Affected": "475000",
+        "Type_of_Breach": "Unauthorized Access/Disclosure, Hacking/IT Incident",
+        "Location_of_Breached_Information": "Network Server",
+        "Year": "2008"
+    },
+    {
+        "State": "PA",
+        "Individuals_Affected": "1085",
+        "Type_of_Breach": "Unauthorized Access/Disclosure",
+        "Location_of_Breached_Information": "Network Server",
+        "Year": "2008"
+    },
+    {
+        "State": "OH",
+        "Individuals_Affected": "501",
+        "Type_of_Breach": "Theft",
+        "Location_of_Breached_Information": "Laptop, Desktop Computer",
+        "Year": "2008"
+    },
+    {
+        "State": "FL",
+        "Individuals_Affected": "1562",
+        "Type_of_Breach": "Unauthorized Access/Disclosure",
+        "Location_of_Breached_Information": "Other, Electronic Medical Record",
+        "Year": "2008"
+    },
+    {
+        "State": "NC",
+        "Individuals_Affected": "1370",
+        "Type_of_Breach": "Unauthorized Access/Disclosure",
+        "Location_of_Breached_Information": "Other",
+        "Year": "2008"
+    },
+    {
+        "State": "TX",
+        "Individuals_Affected": "2875",
+        "Type_of_Breach": "Theft",
+        "Location_of_Breached_Information": "Electronic Medical Record, Paper",
+        "Year": "2008"
+    },
+    {
+        "State": "PR",
+        "Individuals_Affected": "8000",
+        "Type_of_Breach": "Theft, Unauthorized Access/Disclosure",
+        "Location_of_Breached_Information": "Network Server",
+        "Year": "2008"
+    },
+    {
+        "State": "IA",
+        "Individuals_Affected": "2042",
+        "Type_of_Breach": "Other",
+        "Location_of_Breached_Information": "Laptop, E-mail, Other Portable Electronic Device",
+        "Year": "2008"
+    },
+    {
+        "State": "MN",
+        "Individuals_Affected": "27839",
+        "Type_of_Breach": "Loss, Unauthorized Access/Disclosure",
+        "Location_of_Breached_Information": "Laptop, Desktop Computer, Other Portable Electronic Device",
+        "Year": "2008"
+    },
+    {
+        "State": "MN",
+        "Individuals_Affected": "796",
+        "Type_of_Breach": "Loss, Unauthorized Access/Disclosure",
+        "Location_of_Breached_Information": "Laptop, Desktop Computer, Other Portable Electronic Device",
+        "Year": "2008"
+    },
+    {
+        "State": "MN",
+        "Individuals_Affected": "1699",
+        "Type_of_Breach": "Loss, Unauthorized Access/Disclosure",
+        "Location_of_Breached_Information": "Laptop, Desktop Computer, Other Portable Electronic Device",
+        "Year": "2008"
+    },
+    {
+        "State": "MN",
+        "Individuals_Affected": "715",
+        "Type_of_Breach": "Loss, Unauthorized Access/Disclosure",
+        "Location_of_Breached_Information": "Laptop, Desktop Computer, Other Portable Electronic Device",
+        "Year": "2008"
+    }
+]

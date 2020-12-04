@@ -1,14 +1,4 @@
 <!DOCTYPE html>
-<style>
-    .state-borders {
-        fill: none;
-        stroke: black;
-        stroke-width: 1px;
-        stroke-linejoin: round;
-        stroke-linecap: round;
-        pointer-events: none;
-    }
-</style>
 
 <head>
     <!-- Bootstrap -->
@@ -28,92 +18,565 @@
         integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
 </head>
 
-<body>
-    <div id="header"></div>
-    <div>
-        <h1 style="text-align: center;">CPSC 583 - Data Visualization 1</h1>
-    </div>
-    <div>
-        <svg width="960" height="600" style="display: block; margin: auto;"></svg>
+<style>
+    div.tooltip {
+        position: absolute;
+        text-align: center;
+        width: 70px;
+        height: 40px;
+        padding: 2px;
+        font: 15px sans-serif;
+        font-weight: bold;
+        color: orange;
+        background: #425b70;
+        border: 0px;
+        border-radius: 8px;
+        pointer-events: none;
+    }
 
+    .upButton {
+        background: green;
+        width: 70px;
+        height: 40px;
+        font-size: 20px;
+        border-radius: 5px;
+        opacity: 0.8;
+    }
+
+    .downButton {
+        background: red;
+        width: 70px;
+        height: 40px;
+        font-size: 20px;
+        border-radius: 5px;
+        opacity: 0.8;
+    }
+
+    .bigFont {
+        font-size: 30px;
+        font-weight: bold;
+    }
+</style>
+
+<body onload="updateAll(2008)">
+    <br>
+    <div style="text-align: center;">
+        <h1>Cyber Security Breaches in Healthcare (United States)</h1>
+        <p>Use the left/right buttons to select a different year</p>
+        <p>Click on a state to bring up the state's statistics</p>
+        <p>Hover over a state to see quick statistics</p>
+        <p>Change the Year with the buttons below:</p>
+        <p class="bigFont">Year (2008 - 2014) </p>
+        <p id="yearID" class="bigFont">2008</p>
+        <div class="slidecontainer" style="text-align: center;">
+            <button type="button" class="btn btn-danger btnspace" onclick="downYear()">Decrease</button>
+            <button type="button" class="btn btn-primary btnspace" onclick="upYear()">Increase</button>
+        </div>
     </div>
+
+    <div class="row">
+        <div class="col-7">
+            <div class="row text-right">
+                <div id="legend2"></div>
+            </div>
+            <div class="row">
+                <svg id="myMap" width="960" height="600" style="display: block; margin: auto;"></svg>
+            </div>
+        </div>
+        <div class="col-3 align-self-center">
+            <div class="row">
+                <div class="col">
+                    <h3>Individuals Affected per Breach</h3>
+                    <p id="totalInfo"></p>
+                    <svg id="chart">
+                    </svg>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h3 id="statsHeader"></h3>
+                    <p id="statsInfo"></p>
+                    <svg id="stats">
+                    </svg>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-2 space">
+
+        </div>
+    </div>
+
 
     <script src="https://d3js.org/d3.v4.min.js"></script>
     <script src="https://d3js.org/topojson.v2.min.js"></script>
     <link rel="stylesheet" href="style.css">
+    <!-- Map Visual -->
     <script>
 
-        //Array for Individuals Affected (SUM)
-        var personsAffectedArray = {
+        let baseColor = d3.scaleLinear()
+            .domain([15, 75])
+            .range(["white", "blue"]);
+
+        var scale = d3.select('#legend2').append("svg")
+
+        var g = scale.selectAll(".rect")
+            .data([15, 30, 45, 60, 75])
+            .enter()
+            .append("g")
+            .classed('rect', true)
+            .text("hello")
+
+        g.append("rect")
+            .attr("width", "30")
+            .attr("height", "30")
+            .attr("x", function (d) { return d * 2 })
+            .attr("y", 100)
+            .attr("fill", function (d) { return baseColor(d) });
+
+
+
+        var chartRemove = d3.select('#chart')
+        var statRemove = d3.select('#stats')
+        var mapRemove = d3.select('#myMap')
+
+        var yearValue = document.getElementById("yearID").textContent;
+
+        function upYear() {
+            if (yearValue < 2014) {
+                yearValue++;
+                document.getElementById("yearID").textContent = yearValue;
+                updateAll(yearValue);
+            }
         }
 
-        console.log(personsAffectedArray)
+        function downYear() {
+            if (yearValue > 2008) {
+                yearValue--;
+                document.getElementById("yearID").textContent = yearValue;
+                updateAll(yearValue);
+            }
+        }
 
-        var svg = d3.select("svg");
-        var path = d3.geoPath();
-        d3.json("states.json", function (error, us) {
-            if (error) throw error;
+        function updateAll(year) {
 
-            console.log(us)
+            chartRemove.selectAll("g").remove()
+            statRemove.selectAll("g").remove()
+            mapRemove.selectAll("path").remove()
 
-            //PA 42
-            //TRANSFER ID TO CODE
-            //Load my data first
-            d3.json("myData-All.json", function (data) {
-                //Calculate the total Affected per State
-                data.forEach(function (d) {
-                    if (d.State in personsAffectedArray) {
-                        personsAffectedArray[d.State] += +d.Individuals_Affected;
-                    } else {
-                        personsAffectedArray[d.State] = +d.Individuals_Affected;
-                    }
+            //Array for Individuals Affected (SUM)
+            var personsAffectedArray = {
+            }
+
+            //Data for each State (52)
+            let perState = [
+            ]
+
+            //Summation data for Type of Breach etc.
+            let BreachTypeSumData = [
+                { breach: "Hack", freq: 0, color: "yellow" },
+                { breach: "UA", freq: 0, color: "green" },
+                { breach: "Theft", freq: 0, color: "black" },
+                { breach: "Other", freq: 0, color: "red" },
+                { breach: "ImD", freq: 0, color: "purple" },
+                { breach: "Loss", freq: 0, color: "silver" },
+                { breach: "Unknown", freq: 0, color: "pink" }
+            ]
+
+            /* console.log(BreachTypeSumData) */
+
+            //check the biggest
+            var biggestforstate = 0;
+            var largestbreach = 0;
+
+            var svg = d3.select("#myMap");
+            var path = d3.geoPath();
+            d3.json("states.json", function (error, us) {
+                if (error) throw error;
+
+                /* console.log(us) */
+                var yearJson = "myData-" + yearValue + ".json"
+
+                d3.json("myData-All.json", function (data) {
+                    data.forEach(function (d) {
+                        if (!(d.State in perState)) { perState[d.State] = { Hack: 0, UA: 0, Theft: 0, Other: 0, ImD: 0, Loss: 0, Unknown: 0 } }
+                    })
+
+
+                    //Load my data first
+                    d3.json(yearJson, function (data) {
+
+                        var maxValue;
+
+                        //Calculate the total Affected per State
+                        //Add the data to total Data
+                        data.forEach(function (d) {
+                            //add to perState
+                            if (d.State != "PR") {
+                                if (d.State in personsAffectedArray) {
+                                    personsAffectedArray[d.State] += +d.Individuals_Affected;
+                                } else {
+                                    personsAffectedArray[d.State] = +d.Individuals_Affected;
+                                }
+                                if (d.Individuals_Affected > largestbreach) {
+                                    largestbreach = d.Individuals_Affected;
+                                    console.log("LB " + largestbreach)
+                                }
+
+                                //total data
+                                if (d.Type_of_Breach.includes("Hack")) {
+                                    BreachTypeSumData[0].freq += +d.Individuals_Affected
+                                    perState[d.State].Hack += +d.Individuals_Affected
+                                    if (perState[d.State].Hack > biggestforstate) {
+                                        biggestforstate = perState[d.State].Hack;
+                                        //console.log(d.State)
+                                    }
+                                }
+                                if (d.Type_of_Breach.includes("Unauthorized")) {
+                                    BreachTypeSumData[1].freq += +d.Individuals_Affected
+                                    perState[d.State].UA += +d.Individuals_Affected
+                                    if (perState[d.State].UA > biggestforstate) {
+                                        biggestforstate = perState[d.State].UA;
+                                        //console.log(d.State)
+                                    }
+                                }
+                                if (d.Type_of_Breach.includes("Theft")) {
+                                    BreachTypeSumData[2].freq += +d.Individuals_Affected
+                                    perState[d.State].Theft += +d.Individuals_Affected
+                                    if (perState[d.State].Theft > biggestforstate) {
+                                        biggestforstate = perState[d.State].Theft;
+                                        //console.log(d.State)
+                                    }
+                                }
+                                if (d.Type_of_Breach.includes("Other")) {
+                                    BreachTypeSumData[3].freq += +d.Individuals_Affected
+                                    perState[d.State].Other += +d.Individuals_Affected
+                                    if (perState[d.State].Other > biggestforstate) {
+                                        biggestforstate = perState[d.State].Other;
+                                        //console.log(d.State)
+                                    }
+                                }
+                                if (d.Type_of_Breach.includes("Improper Disposal")) {
+                                    BreachTypeSumData[4].freq += +d.Individuals_Affected
+                                    perState[d.State].ImD += +d.Individuals_Affected
+                                    if (perState[d.State].ImD > biggestforstate) {
+                                        biggestforstate = perState[d.State].ImD;
+                                        //console.log(d.State)
+                                    }
+                                }
+                                if (d.Type_of_Breach.includes("Loss")) {
+                                    BreachTypeSumData[5].freq += +d.Individuals_Affected
+                                    perState[d.State].Loss += +d.Individuals_Affected
+                                    if (perState[d.State].Loss > biggestforstate) {
+                                        biggestforstate = perState[d.State].Loss;
+                                        //console.log(d.State)
+                                    }
+                                }
+                                if (d.Type_of_Breach.includes("Unknown")) {
+                                    BreachTypeSumData[6].freq += +d.Individuals_Affected
+                                    perState[d.State].Unknown += +d.Individuals_Affected
+                                    if (perState[d.State].Unknown > biggestforstate) {
+                                        biggestforstate = perState[d.State].Unknown;
+                                        //console.log(d.State)
+                                    }
+                                }
+                            }
+
+                        })
+                        //console.log(perState)
+                        //console.log(biggestforstate)
+
+                        var iteratorState = 0;
+                        for (i = 0; i < perState.length; i++) {
+
+                        }
+
+
+                        //================================================================================
+
+                        //Colors for amount of people affected (high -> low) (MAP)
+                        //use sqrt of total
+                        var IAcolor = d3.scaleLinear()
+                            .domain([1, Math.log(biggestforstate)])
+                            .range(['white', 'blue'])
+
+                        var MAPcolor = d3.scaleLinear()
+                            .domain([1, biggestforstate])
+                            .range(['white', 'blue'])
+
+                        console.log(biggestforstate)
+
+                        //Move this to just after Numbers are done calculating
+                        /* Bar Chart Visual */
+                        //Margins
+                        var margin = { top: 20, right: 20, bottom: 30, left: 60 },
+                            width = 480 - margin.left - margin.right,
+                            height = 250 - margin.bottom - margin.top;
+
+                        //Ranges
+                        /* .domain(["Hack", "UA", "Theft", "Other", "ImD", "Loss", "Unknown"]) */
+                        var x = d3.scaleBand()
+                            .range([0, width])
+                            .padding(0.2);
+
+                        var y = d3.scaleLinear()
+                            .range([height, 0]);
+
+                        var yLogged = d3.scaleLinear()
+                            .range([height, 0])
+
+                        var svgChart = d3.select('#chart')
+                            .attr("width", width + margin.left + margin.right)
+                            .attr("height", height + margin.top + margin.bottom)
+                            .append("g")
+                            .attr("transform", "translate(" + margin.left + "," + margin.right + ")");
+
+                        //console.log("max " + max)
+                        //console.log("min " + min)
+
+                        x.domain(BreachTypeSumData.map(function (d) {
+                            return d.breach;
+                        }))
+
+                        //Domains
+                        y.domain([0, d3.max(BreachTypeSumData, function (d) {
+                            return d.freq
+                        })])
+
+                        yLogged.domain([0, d3.max(BreachTypeSumData, function (d) {
+                            return Math.exp(Math.log(d.freq))
+                        })])
+
+                        svgChart.selectAll("rect")
+                            .data(BreachTypeSumData)
+                            .enter()
+                            .append("rect")
+                            .attr("class", "bar")
+                            .attr("x", function (d) {
+                                return x(d.breach)
+                            })
+                            .attr("width", x.bandwidth())
+                            .attr("y", function (d) {
+                                return y(d.freq)
+                            })
+                            .attr("height", function (d) {
+                                return height - y(d.freq)
+                            })
+                            .attr("stroke", "black")
+                            .attr("stroke-width", "2");
+
+                        svgChart.selectAll("rect")
+                            .data(BreachTypeSumData)
+                            .attr("fill", function (d) {
+                                return MAPcolor(d.freq)
+                            })
+
+                        var xAxis = d3.axisBottom(x);
+                        var yAxis = d3.axisLeft(y);
+
+                        svgChart.append("g")
+                            .attr("class", "xAxis")
+                            .attr("transform", "translate(0," + height + ")")
+                            .call(xAxis);
+
+                        svgChart.append("g")
+                            .attr("class", "yAxis")
+                            .call(yAxis);
+
+                        d3.select('#totalInfo')
+                            .text("Maximum: " + biggestforstate)
+
+                        //My Tooltip
+                        var div = d3.select("body").append("div")
+                            .attr("class", "tooltip")
+                            .style("opacity", 0)
+
+                        //=================================================
+
+                        //Change the color based on IA array
+                        svg.selectAll("path")
+                            .data(topojson.feature(us, us.objects.states).features)
+                            .enter()
+                            .append("path")
+                            .attr("d", path)
+                            .attr("fill", function (d) {
+                                var numberValue = typeof personsAffectedArray[d.id] == 'undefined' ? "0" : personsAffectedArray[d.id]
+                                var val = numberValue
+                                if (numberValue == "0") {
+                                    return "#8a8a8a"
+                                } else {
+                                    //console.log("val " + val + " " + d.id)
+                                    return MAPcolor(val)
+                                }
+                            })
+                            .style("stroke", "black")
+                            .style("opacity", "0.7")
+                            .style("stroke-width", "2")
+                            .on('mouseover', function (d) {
+                                //Change Style
+                                d3.select(this)
+                                    .style("fill", "red")
+                                    .style("opacity", "0.9")
+                                    .style("stroke-width", "4")
+
+                                //Tooltip
+                                div.transition()
+                                    .duration(200)
+                                    .style("opacity", 0.9);
+
+                                var numberValue = typeof personsAffectedArray[d.id] == 'undefined' ? "0" : personsAffectedArray[d.id]
+
+                                div.html(d.id + "<br>" + numberValue)
+                                    .style("left", (d3.event.pageX) + "px")
+                                    .style("top", (d3.event.pageY) + 30 + "px")
+                            })
+                            .on('mouseout', function (d) {
+                                d3.select(this)
+                                    .style("opacity", "0.7")
+                                    .style("stroke-width", "2")
+                                    .style("fill", function (d) {
+                                        var numberValue = typeof personsAffectedArray[d.id] == 'undefined' ? "0" : personsAffectedArray[d.id]
+                                        var val = numberValue
+                                        if (numberValue == "0") {
+                                            return "#8a8a8a"
+                                        } else {
+                                            //console.log("val " + val + " " + d.id)
+                                            return MAPcolor(val)
+                                        }
+                                    })
+
+                                div.transition()
+                                    .duration(200)
+                                    .style("opacity", 0)
+                            })
+                            .on('click', function (d) {
+
+                                console.log(d.id)
+                                var changeState = d.id;
+
+                                //Change Name of State
+                                d3.select('#statsHeader')
+                                    .text(function (d) {
+                                        var stat = "Statistics for " + changeState
+                                        return (stat)
+                                    })
+
+
+                                var svgStats = d3.select('#stats');
+                                //svgStats.remove();
+
+                                let stateStatistics = [perState[d.id].Hack, perState[d.id].UA, perState[d.id].Theft,
+                                perState[d.id].Other, perState[d.id].ImD, perState[d.id].Loss, perState[d.id].Unknown]
+
+
+                                var nonZero = 0;
+                                var largest = 0;
+                                var smallest = 100000;
+                                for (i = 0; i < stateStatistics.length; i++) {
+                                    if (stateStatistics[i] > 0) nonZero++;
+                                    if (stateStatistics[i] > largest) largest = stateStatistics[i];
+                                    if (stateStatistics[i] < smallest) smallest = stateStatistics[i];
+                                }
+
+                                //console.log(stateStatistics)
+
+                                svgStats.selectAll("g").remove();
+                                d3.select('#statsInfo')
+                                    .text("")
+
+                                if (largest == 0) {
+                                    //No Data
+                                    d3.select('#statsInfo')
+                                        .text("Not Enough Data")
+
+                                } else if (nonZero == 1) {
+                                    d3.select('#statsInfo')
+                                        .text("Individuals Affected: " + largest)
+                                } else {
+                                    //Normal
+                                    var barChartColor = d3.scaleLinear()
+                                        .domain([0, largest])
+                                        .range(['white', 'blue'])
+
+
+                                    //Summation data for Type of Breach etc.
+                                    let newBreachData = [
+                                        { breach: "Hack", freq: perState[d.id].Hack, color: barChartColor(perState[d.id].Hack) },
+                                        { breach: "UA", freq: perState[d.id].UA, color: barChartColor(perState[d.id].UA) },
+                                        { breach: "Theft", freq: perState[d.id].Theft, color: barChartColor(perState[d.id].Theft) },
+                                        { breach: "Other", freq: perState[d.id].Other, color: barChartColor(perState[d.id].Other) },
+                                        { breach: "ImD", freq: perState[d.id].ImD, color: barChartColor(perState[d.id].ImD) },
+                                        { breach: "Loss", freq: perState[d.id].Loss, color: barChartColor(perState[d.id].Loss) },
+                                        { breach: "Unknown", freq: perState[d.id].Unknown, color: barChartColor(perState[d.id].Unknown) }
+                                    ]
+
+                                    //console.log(newBreachData)
+
+
+                                    //STATISTICS BAR CHART
+                                    var statX = d3.scaleBand()
+                                        .range([0, width])
+                                        .padding(0.2);
+
+                                    var statY = d3.scaleLinear()
+                                        .range([height, 0]);
+
+                                    var svgStats = d3.select('#stats')
+                                        .attr("width", width + margin.left + margin.right)
+                                        .attr("height", height + margin.top + margin.bottom)
+                                        .append("g")
+                                        .attr("transform", "translate(" + margin.left + "," + margin.right + ")");
+
+                                    //Domains
+                                    statX.domain(newBreachData.map(function (d) {
+                                        return d.breach
+                                    }))
+
+                                    statY.domain([0, largest])
+
+                                    var xAxisStat = d3.axisBottom(statX);
+                                    var yAxisStat = d3.axisLeft(statY);
+
+                                    svgStats.append("g")
+                                        .attr("transform", "translate(0," + height + ")")
+                                        .call(xAxisStat);
+
+                                    svgStats.append("g")
+                                        .attr("class", "yAxisChange")
+                                        .call(yAxisStat);
+
+
+                                    svgStats.selectAll("rect")
+                                        .data(newBreachData)
+                                        .enter()
+                                        .append("rect")
+                                        .attr("class", "statBar")
+                                        .attr("x", function (d) {
+                                            return statX(d.breach)
+                                        })
+                                        .attr("width", statX.bandwidth())
+                                        .attr("y", function (d) {
+                                            return statY(d.freq)
+                                        })
+                                        .attr("height", function (d) {
+                                            return height - statY(d.freq)
+                                        })
+                                        .attr("fill", function (d) {
+                                            return d.color
+                                        })
+                                        .attr("stroke", "black")
+                                        .attr("stroke-width", "2");
+                                }
+                            });
+                    })
+
                 })
 
-                //Colors for amount of people affected (high -> low)
-                //use sqrt of total
-                var IAcolor = d3.scaleLinear()
-                    .domain([2, 15])
-                    .range(['white', 'red'])
-                console.log(IAcolor)
+                console.log(perState)
 
-                //Change the color based on IA array
-                svg.selectAll("path")
-                    .data(topojson.feature(us, us.objects.states).features)
-                    .enter()
-                    .append("path")
-                    .attr("d", path)
-                    .attr("fill", function (d) {
-                        var val = Math.log(Math.sqrt(personsAffectedArray[d.id]))
-                        return IAcolor(val)
-                    });
 
-                svg.selectAll("text")
-                    .data(topojson.feature(us, us.objects.states).features)
-                    .enter()
-                    .append("text")
-                    .attr("x", function (d) {
-                        return path.centroid(d)[0];
-                    })
-                    .attr("y", function (d) {
-                        return path.centroid(d)[1];
-                    })
-                    .attr("font-size", "15px")
-                    .attr("font-family", "Courier New")
-                    .attr("font-weight", "bold")
-                    .text(function (d) {
-                        return d.id
-                    })
+            });
+        }
 
-                svg.selectAll("text")
-
-            })
-            console.log(personsAffectedArray)
-        });
-
-    </script>
-
-    <!-- Load the Navbar -->
-    <script>
-        $("#header").load("navbar.html");
     </script>
 </body>
