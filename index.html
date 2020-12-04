@@ -85,7 +85,7 @@
         <div class="col-3 align-self-center">
             <div class="row">
                 <div class="col text-center">
-                    <h3>Individuals Affected per Breach (Logged)</h3>
+                    <h3>Individuals Affected per Breach</h3>
                     <p id="totalInfo"></p>
                     <svg id="chart">
                     </svg>
@@ -125,6 +125,13 @@
             .append("g")
             .classed('rect', true)
             .text("hello")
+
+        g.append("rect")
+            .attr("width", "30")
+            .attr("height", "30")
+            .attr("x", "0")
+            .attr("y", 100)
+            .attr("fill", "grey");
 
         g.append("rect")
             .attr("width", "30")
@@ -362,7 +369,22 @@
                                 return height - y(d.freq)
                             })
                             .attr("stroke", "black")
-                            .attr("stroke-width", "2");
+                            .attr("stroke-width", "2")
+                            .on('mouseover', function (d) {
+                                //Change Style
+                                d3.select(this)
+                                    .style("fill", "red")
+                                    .style("stroke-width", "4")
+
+
+                            })
+                            .on('mouseout', function (d) {
+                                d3.select(this)
+                                    .style("stroke-width", "2")
+                                    .style("fill", function (d) {
+                                        
+                                    })
+                            });
 
                         svgChart.selectAll("rect")
                             .data(BreachTypeSumData)
