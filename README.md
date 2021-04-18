@@ -1,6 +1,6 @@
 # CPSC 583 Data Visualization - Final Project
 
-##Introduction
+## Introduction
 
 My project is about cyber security breaches that took place between 2008-2014 in the healthcare sector of the United States. My goals for this project are to uncover relevant information from the data and be able to use this data to find trends/facts that would otherwise be invisible to us.I think the information in this dataset is extremely relevant to us with how we are developing as a society. It would be useful to see if there are any findings that can be uncovered from this data to perhaps predict future trends, or simply to relay this information to the end user in a presentable interactive manner.
 
