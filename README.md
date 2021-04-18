@@ -4,7 +4,7 @@
 
 My project is about cyber security breaches that took place between 2008-2014 in the healthcare sector of the United States. My goals for this project are to uncover relevant information from the data and be able to use this data to find trends/facts that would otherwise be invisible to us.I think the information in this dataset is extremely relevant to us with how we are developing as a society. It would be useful to see if there are any findings that can be uncovered from this data to perhaps predict future trends, or simply to relay this information to the end user in a presentable interactive manner.
 
-##Data Description
+## Data Description
 
 Original Source: (**https://ocrportal.hhs.gov/ocr/breach/breach_report.jsf**)
 
@@ -12,7 +12,7 @@ This dataset encompasses the security breaches that involved 500 or more health 
 
 With the increased use of technology in every aspect of society, I think it is very important to know that the data being stored is secure. This dataset will help provide an insight into just how prevalent these attacks really are, and how these attacks are occurring. In addition, this dataset is limited to the healthcare sector which I think is a very important as the data that these entities receive is very personal to the individual providing their information.
 
-###Pros and Cons of Data Set
+### Pros and Cons of Data Set
 
 I would like to point out a few clear disadvantages working with this data. The first point is that the records mainly range from 2009-2014. I do not think this would be enough time to analyze trends based on a time standpoint. For example, have the locations of these breaches changed, and how do the number of cyber-attacks compare to the last 5 years? I think this is important to note because the rate at which technology is being integrated has changed more so in recent years, than those before.
 
